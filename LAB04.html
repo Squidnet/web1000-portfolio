@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="no">
+<meta charset="UTF-8">
+    
+    <head>
+    <title>LAB04 - Kontaktskjema</title>
+        
+    <style>
+        #container {
+            display: block;
+            margin: auto;
+            width: 600px;
+            height: 390px;
+            background-color: crimson;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        input {
+            width: 300px;
+        }
+        
+        h1 {
+            display: block;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+        
+        #navn {
+            display: block;
+            padding-left: 50px;
+        }
+        
+        #epost {
+            display: block;
+            padding-left: 50px;
+        }
+        
+        #subtekst {
+            display: block;
+            padding-left: 50px;
+        }
+        
+        #melding {
+            display: block;
+            padding-left: 50px;
+        }
+        
+        textarea {
+            min-width: 300px;
+            max-width: 300px;
+            max-height: 70px;
+        }
+        
+        #button {
+            margin-top: -36px;
+            display: block;
+            width: 160px;
+            height: 32px;
+            float: right;
+            margin-right: 50px;
+            background-color: white;
+        }
+        
+    
+        
+        
+        </style>    
+    </head>
+    
+    <body>
+        <div id="container">
+  <form> <div> <h1>Kontaktskjema:</h1> 
+      <label id="navn"> <span>Navn:</span><br><input id="name" type="text" name="name" /> </label> <br>
+      <label id="epost"> <span>Epost: </span><br><input id="email" type="text" name="email" /> </label> <br>
+      <label id="subtekst"> <span>Emne: </span><br><input id="subject" type="text" name="subject" /> </label> <br>
+      <label id="melding"> <span>Melding: </span><br><textarea id="feedback" name="feedback"></textarea> <br><input type="button" id="button" value="Send" /> </label> </div> </form>
+    </div><center><br><br><a href="index.html">Tilbake til forsiden</a></center>
+    </body>
+    
+ 
+    
+</html>

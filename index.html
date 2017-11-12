@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet"> <!-- font hentet fra Google Fonts -->
+    <title>Web&amp;HCI: Online Portfolio</title>
+</head>
+    
+<body>
+    <div id="canvas">
+    
+    <div id="nav">
+        <a id="overskrift">Web&amp;HCI: Online Portfolio</a>
+        <a id="undertekst">av Mikkel (216799)</a>
+        </div>
+        
+    <div id="bildekarusell">
+        <!-- klippet & fargekorrigert -->
+        <img class="bildekarusell" src="bildekarusell/bilde1.jpg" alt="bilde av HSN campus vestfold"> 
+        <!-- klippet -->
+        <img class="bildekarusell" src="bildekarusell/bilde2.jpg" alt="bilde av en vegg med farger på HSN campus vestfold"> 
+        <!-- klippet & lagt på "sharpen" effekt -->
+        <img class="bildekarusell" src="bildekarusell/bilde3.jpg" alt="bilde fra ett audiotorium på HSN campus vestfold"> 
+        </div>
+        
+    <h1>Trykk på boksene for å se laboppgavene:</h1>
+    
+    <div id="boxes">
+        <a href="LAB01.html"><div class="box">LABO1</div></a>
+        <a href="LAB02.html"><div class="box">LAB02</div></a>
+        <a href="LAB03.html"><div class="box">LAB03</div></a>
+        <a href="LAB04.html"><div class="box">LAB04</div></a>
+        <a href="LAB05.html"><div class="box">LAB05</div></a>
+        <a href="https://youtu.be/5eDhKV7TSuo"><div class="siste-box">LAB06</div></a>
+        
+        </div>
+        
+    <div id="footer">
+        <a id="footer-text" href="http://checkers.eiii.eu/en/pagecheck2.0/?uuid=fa7fcf8c-287d-42de-8ff7-f3e5185950d2">Link til universell utforming-vurdering</a><a id="footer-text-hide" href="http://checkers.eiii.eu/en/pagecheck2.0/?uuid=fa7fcf8c-287d-42de-8ff7-f3e5185950d2"> (European Internet Inclusion Initiative)</a>
+        
+        </div>
+        
+    
+    </div>
+
+<script>
+var minIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("bildekarusell");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    minIndex++;
+    if (minIndex > x.length) {minIndex = 1}    
+    x[minIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500); // Endrer bilde hvert 3,5 sekund
+}
+</script>
+    
+</body>
+</html>

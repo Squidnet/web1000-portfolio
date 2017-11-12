@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="no">
+<meta charset="UTF-8">
+    
+    <head>
+    <title>LAB03 - Bildekarusell</title>
+        
+    </head>
+    
+    <body>
+    <img class="bildefremvisning" src="bildekarusell/img1.jpg">
+    <img class="bildefremvisning" src="bildekarusell/img2.jpg">
+    <img class="bildefremvisning" src="bildekarusell/img3.jpg">
+    <img class="bildefremvisning" src="bildekarusell/img4.jpg">
+    <a>Leste på <a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/">nett</a> at det er flere fordeler med å kjøre
+        javascript istedenfor CSS.</a>
+        
+        
+   <br>
+    <br>
+   <a href="index.html">Tilbake til forsiden</a>
+        
+    
+<!-- DET ER JEG, MIKKEL SOM HAR LAGET DENNE SIDEN :D -->
+    
+    </body>
+    
+    <script>
+        
+    // DENNE KODEN ER ETTERLIGNET FRA W3SCHOOLS.COM
+        
+    var karusell = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("bildefremvisning");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    karusell++;
+    if (karusell > x.length) {karusell = 1} 
+    x[karusell-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // BILDET ENDRER SEG HVERT 2. SEKUND
+}
+    </script>
+    
+</html>
